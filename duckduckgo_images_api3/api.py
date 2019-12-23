@@ -27,7 +27,7 @@ class ApiSearchResults:
             self.search_results.append(SearchResult(result))
 
 
-def search(keywords, debug=False, print_results=False, max_request_num=100) -> ApiSearchResults:
+def search(keywords, print_results=False, max_request_num=100) -> ApiSearchResults:
     url = 'https://duckduckgo.com/'
     results = ApiSearchResults()
     params = {
